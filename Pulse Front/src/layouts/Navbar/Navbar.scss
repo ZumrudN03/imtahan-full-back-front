@@ -1,0 +1,72 @@
+.navbar {
+  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+z-index: 3;
+background-color: #050a1373;
+  &_container {
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      padding: 2px;
+      max-width: 12%;
+      width: 100%;
+      border: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 36px;
+        color: white;
+        span {
+          color: #ffc515;
+        }
+      }
+    }
+    .lists {
+      border: 1px solid lightgray;
+      padding: 30px;
+      max-width: 76%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .active{
+        color: #ffc515;
+      }
+      a {
+        cursor: pointer;
+        color: white;
+        transition: 300ms;
+        font-size: 18px;
+        font-weight: 500;
+        &:hover {
+          color: #ffc515;
+        }
+      }
+    }
+    .reservation {
+      border: 1px solid lightgray;
+      max-width: 12%;
+      width: 100%;
+      padding: 7px;
+      color: white;
+      display: flex;
+      span{
+        color: #ffc515;
+      }
+      p{
+        display: flex;
+        align-items: center;
+        
+      }
+     
+    }
+  }
+}
